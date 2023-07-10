@@ -76,7 +76,7 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
         {
             Debug.Log("The enemy hit the the sword");
 
-            EnemyDeath();
+            //EnemyDeath(); Do not touch this atm.
 
             Destroy(this.gameObject);
         }

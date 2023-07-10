@@ -37,7 +37,7 @@ public class BD_EnemyAi_MH : MonoBehaviour
         {
             Debug.Log ("The enemy hit the the sword");
 
-            EnemyDeath();
+            //EnemyDeath();
 
             Destroy (this.gameObject);
         }
