@@ -31,7 +31,7 @@ public class BD_EnemyAi_MH : MonoBehaviour
          NavigateToDestination(destination);
     }
 
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Sword")
         {
@@ -42,6 +42,7 @@ public class BD_EnemyAi_MH : MonoBehaviour
             Destroy (this.gameObject);
         }
     }
+    */
 
     public void EnemyDeath()
     {

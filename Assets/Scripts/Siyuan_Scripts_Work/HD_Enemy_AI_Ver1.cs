@@ -70,7 +70,7 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Sword")
         {
@@ -81,6 +81,7 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    */
 
     public void EnemyDeath()
     {
