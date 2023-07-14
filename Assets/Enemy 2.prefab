@@ -155,8 +155,8 @@ MonoBehaviour:
   destination2: {x: 0, y: 0, z: 0}
   destination3: {x: 0, y: 0, z: 0}
   distanceToKeep: 5
-  target: {fileID: 0}
-  player: {fileID: 0}
+  target: {fileID: 3243442551624297249, guid: 628bde0258830a041b9fc097b023562b, type: 3}
+  player: {fileID: 2758689502066356635, guid: 628bde0258830a041b9fc097b023562b, type: 3}
   spawnRange: {x: 0, y: 0}
   enemyPrefab: {fileID: 7543298161044088423}
   HiddenOrigin1: {fileID: 0}
