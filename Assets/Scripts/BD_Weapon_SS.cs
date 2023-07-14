@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class BD_Weapon_SS : MonoBehaviour
 {
     // Update is called once per frame
     void Update()

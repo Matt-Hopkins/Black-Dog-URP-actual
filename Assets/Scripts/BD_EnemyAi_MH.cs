@@ -37,13 +37,13 @@ public class BD_EnemyAi_MH : MonoBehaviour
         {
             Debug.Log ("The enemy hit the the sword");
 
-            EnemyDeath();
+            //EnemyDeath();
 
             Destroy (this.gameObject);
         }
     }
 
-    public void EnemyDeath()
+    /*public void EnemyDeath()
     {
         // on enemy destruction spawn two enemies
 
@@ -61,5 +61,5 @@ public class BD_EnemyAi_MH : MonoBehaviour
 
         // Destroy this enemy (handled by weapon script)
     
-    }
+    }*/
 }
