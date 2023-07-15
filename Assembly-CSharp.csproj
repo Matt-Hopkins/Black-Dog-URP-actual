@@ -59,15 +59,46 @@
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\HD_Enemy_AI_Ver1.cs" />
     <Compile Include="Assets\Scripts\BD_HealthCounter_MH.cs" />
     <Compile Include="Assets\Scripts\BD_Health_MH.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\New_PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\BD_Player_MH.cs" />
     <Compile Include="Assets\Scripts\BD_Weapon_SS.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\Mouse_Rotation_Only.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\Transfer1o2.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\Test_Mouse_Follow.cs" />
     <Compile Include="Assets\Scripts\BD_Combat_MH.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\UI\UI_HP_test.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\PlayerHealthPoint.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\BD_Counter_Lv1.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\HD_Counter_Lv1.cs" />
     <Compile Include="Assets\Scripts\BD_EnemyAi_MH.cs" />
-    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Test_Mouse_Follow.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\Player_RangeAttack.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\BulletCollision.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Enemies\HH_BulletCollision.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Enemies\HH_Shooting.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Scripts\Siyuan_Scripts_Work\test commit.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
