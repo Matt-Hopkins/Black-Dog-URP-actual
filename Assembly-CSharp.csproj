@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\BD_HealthCounter_MH.cs" />
     <Compile Include="Assets\Scripts\BD_Health_MH.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\New_PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\Player_RangeAttack.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Enemies\HH_Shooting.cs" />
     <Compile Include="Assets\Scripts\BD_Player_MH.cs" />
     <Compile Include="Assets\Scripts\BD_Weapon_SS.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\Mouse_Rotation_Only.cs" />
@@ -68,14 +70,12 @@
     <Compile Include="Assets\Scripts\BD_Combat_MH.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\UI\UI_HP_test.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\PlayerHealthPoint.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\BulletCollision.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\BD_Counter_Lv1.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\HD_Counter_Lv1.cs" />
-    <Compile Include="Assets\Scripts\BD_EnemyAi_MH.cs" />
-    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\Player_RangeAttack.cs" />
-    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\BulletCollision.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Enemies\HH_BulletCollision.cs" />
-    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Enemies\HH_Shooting.cs" />
+    <Compile Include="Assets\Scripts\BD_EnemyAi_MH.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
