@@ -12,11 +12,14 @@ public class BD_EnemyAi_MH : MonoBehaviour
     public GameObject player;
     public Vector2 spawnRange;
     public GameObject enemyPrefab;
+    Animator animator;
 
     private void Start()
     {
         destination = player.transform.position;
         NavigateToDestination(destination);
+
+        animator = GetComponentInChildren<Animator>();
     }
 
     public void NavigateToDestination(Vector3 destination)
@@ -29,6 +32,8 @@ public class BD_EnemyAi_MH : MonoBehaviour
     {
          destination = player.transform.position;
          NavigateToDestination(destination);
+
+         animator.SetBool("IsMoving", true);
     }
 
     void OnTriggerEnter(Collider other)

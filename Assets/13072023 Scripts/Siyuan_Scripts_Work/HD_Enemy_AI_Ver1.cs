@@ -18,6 +18,7 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
     public GameObject HiddenOrigin1;
     public Transform HellHoundThisOne;
     public float HHdistance;
+    Animator animator;
 
     private void Start()
     {
@@ -31,6 +32,8 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
         NavigateToDestination(destination3);
 
         distanceToKeep = 3.4f;
+
+        animator = GetComponentInChildren<Animator>();
     }
 
     public void NavigateToDestination(Vector3 destination)
@@ -53,15 +56,18 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
         if (HHdistance >= distanceToKeep)
         {
             NavigateToDestination(destination1);
+            animator.SetBool("IsMoving", true);
         }
         else if (HHdistance < distanceToKeep && HHdistance >3.2f)
         {
             NavigateToDestination(HellHoundThisOne.position);
+            animator.SetBool("IsMoving", false);
         }
 
         if (HHdistance <= 3.2f)
         {
             NavigateToDestination(destination3);
+            animator.SetBool("IsMoving", true);
         }
         else
         { 
