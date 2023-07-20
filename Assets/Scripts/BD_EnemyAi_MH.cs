@@ -12,11 +12,15 @@ public class BD_EnemyAi_MH : MonoBehaviour
     public GameObject player;
     public Vector2 spawnRange;
     public GameObject enemyPrefab;
+    public float stunTimmer;
+    public Transform BlackDogThisOne;
+    public float stunTimeLength = 2f;
 
     private void Start()
     {
         destination = player.transform.position;
         NavigateToDestination(destination);
+        stunTimmer = 0;
     }
 
     public void NavigateToDestination(Vector3 destination)
@@ -28,7 +32,15 @@ public class BD_EnemyAi_MH : MonoBehaviour
     void Update()
     {
          destination = player.transform.position;
+         if (stunTimmer == 0)
+         {
          NavigateToDestination(destination);
+         }
+         else if (stunTimmer >= 0.1f)
+         {
+            NavigateToDestination(BlackDogThisOne.position);
+            StunTimeChange();            
+         }
     }
 
     /*void OnTriggerEnter(Collider other)
@@ -62,5 +74,17 @@ public class BD_EnemyAi_MH : MonoBehaviour
 
         // Destroy this enemy (handled by weapon script)
     
+    }
+
+    public void StunTimeChange()
+    {
+       if (stunTimmer >= stunTimeLength)
+       {
+         stunTimmer = 0;
+       }
+       else if (stunTimmer >= 0.1f)
+       {
+        stunTimmer += Time.deltaTime;
+       }
     }
 }

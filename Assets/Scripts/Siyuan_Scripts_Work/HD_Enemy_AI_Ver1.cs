@@ -18,6 +18,9 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
     public GameObject HiddenOrigin1;
     public Transform HellHoundThisOne;
     public float HHdistance;
+    public float stunTimmer;
+    public float stunTimeLength = 2f;
+
 
     private void Start()
     {
@@ -50,38 +53,19 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
     {
         destination1 = player.transform.position;
         CheckDistance();
-        if (HHdistance >= distanceToKeep)
+        if (stunTimmer == 0)
         {
-            NavigateToDestination(destination1);
+        NotStunMove();
         }
-        else if (HHdistance < distanceToKeep && HHdistance >3.2f)
+        else if (stunTimmer >= 0)
         {
             NavigateToDestination(HellHoundThisOne.position);
-        }
-
-        if (HHdistance <= 3.2f)
-        {
-            NavigateToDestination(destination3);
-        }
-        else
-        { 
-
+            StunTimeChange();
         }
 
     }
 
-    /*void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Sword")
-        {
-            Debug.Log("The enemy hit the the sword");
 
-            //EnemyDeath(); Do not touch this atm.
-
-            Destroy(this.gameObject);
-        }
-    }
-    */
 
     public void EnemyDeath()
     {
@@ -101,5 +85,39 @@ public class HD_Enemy_AI_Ver1 : MonoBehaviour
 
         // Destroy this enemy (handled by weapon script)
 
+    }
+
+    public void NotStunMove()
+    {
+       if (HHdistance >= distanceToKeep)
+        {
+            NavigateToDestination(destination1);
+        }
+        else if (HHdistance < distanceToKeep && HHdistance >3.2f)
+        {
+            NavigateToDestination(HellHoundThisOne.position);
+        }
+
+        if (HHdistance <= 3.2f)
+        {
+            NavigateToDestination(destination3);
+        }
+        else
+        { 
+
+        }
+
+    }
+
+     public void StunTimeChange()
+    {
+       if (stunTimmer >= stunTimeLength)
+       {
+         stunTimmer = 0;
+       }
+       else if (stunTimmer >= 0.1f)
+       {
+        stunTimmer += Time.deltaTime;
+       }
     }
 }
