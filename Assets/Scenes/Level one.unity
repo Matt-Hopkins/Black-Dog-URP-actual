@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fd37f2c39cbe3e34685a884eeae7d157, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18068141, g: 0.22618923, b: 0.30713737, a: 1}
+  m_Sun: {fileID: 410087040}
+  m_IndirectSpecularColor: {r: 0.18003722, g: 0.23623373, b: 0.23072487, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1449,7 +1449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &179549705
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1575,6 +1575,10 @@ PrefabInstance:
     - target: {fileID: 100108, guid: e2c8a3f3e8700b144aca3aad1d57668f, type: 3}
       propertyPath: m_Name
       value: Gun_Fighter_Generic_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: e2c8a3f3e8700b144aca3aad1d57668f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e2c8a3f3e8700b144aca3aad1d57668f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4458,7 +4462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &330585544
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4517,14 +4521,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: -0, y: -0.8682457, z: 0.49613446, w: 0}
-  m_LocalPosition: {x: 0, y: 9.07, z: 5.48}
+  m_LocalRotation: {x: -0.18806094, y: -0.7896436, z: 0.47965318, w: -0.3332101}
+  m_LocalPosition: {x: -6.72, y: 10.58, z: 1.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 59.489, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 61.987, y: -227.418, z: -2.764}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4836,6 +4840,7 @@ GameObject:
   - component: {fileID: 410087041}
   - component: {fileID: 410087040}
   - component: {fileID: 410087042}
+  - component: {fileID: 410087043}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -4919,7 +4924,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 48.477, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 359.5648, y: 0.00001246482, z: -0.00001495047}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4940,6 +4945,27 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!95 &410087043
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &429333964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5031,7 +5057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &450155650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5256,7 +5282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &705210125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6970,6 +6996,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 384692421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1032958128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032958130}
+  - component: {fileID: 1032958129}
+  m_Layer: 0
+  m_Name: Skybox link
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1032958129
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032958128}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1032958130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032958128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.130123, y: 47.455185, z: -46.413925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1083174293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7091,7 +7170,7 @@ PrefabInstance:
     - target: {fileID: 2809811124765612639, guid: 085b45d9568141244a219b6286343a0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.13
+      value: 1.041
       objectReference: {fileID: 0}
     - target: {fileID: 2809811124765612639, guid: 085b45d9568141244a219b6286343a0f,
         type: 3}
@@ -10999,11 +11078,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: e2c8a3f3e8700b144aca3aad1d57668f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: -1.01
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: e2c8a3f3e8700b144aca3aad1d57668f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.287
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: e2c8a3f3e8700b144aca3aad1d57668f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11189,7 +11268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1489791824
 Animator:
   serializedVersion: 5
@@ -11439,7 +11518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1605272218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12113,6 +12192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Demon Dog LP
+      objectReference: {fileID: 0}
+    - target: {fileID: 81614332689106965, guid: e5a5194acb48a1c498ea8f2bb33f6e14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 90321317863283725, guid: e5a5194acb48a1c498ea8f2bb33f6e14,
         type: 3}
@@ -13605,8 +13689,10 @@ PlayableDirector:
     value: {fileID: 1605272222}
   - key: {fileID: 5996070755206571814, guid: 11f65be6659466246bcf2ea9168db07d, type: 2}
     value: {fileID: 643130986}
-  - key: {fileID: -8827888442967225228, guid: 11f65be6659466246bcf2ea9168db07d, type: 2}
-    value: {fileID: 179549704}
+  - key: {fileID: 6961355858900979300, guid: 11f65be6659466246bcf2ea9168db07d, type: 2}
+    value: {fileID: 410087043}
+  - key: {fileID: 7636428639273296369, guid: 11f65be6659466246bcf2ea9168db07d, type: 2}
+    value: {fileID: 1032958129}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2117653271
