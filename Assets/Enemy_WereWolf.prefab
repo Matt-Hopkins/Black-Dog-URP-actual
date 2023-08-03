@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552457807699182970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.84, y: 0.82, z: -6.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.84, y: 1.04, z: -6.7069}
+  m_LocalScale: {x: 2.3523, y: 2.3523, z: 2.3523}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8863486132526970341}
@@ -233,8 +233,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3178073582046313381, guid: e5a5194acb48a1c498ea8f2bb33f6e14,
+        type: 3}
+      propertyPath: colorShifterObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 11c37e1c445dd7e429ca6400bf86c276,
+        type: 2}
+    - target: {fileID: 3903825876116384718, guid: e5a5194acb48a1c498ea8f2bb33f6e14,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c0ea18c3d1eec0a4494e6b96a009602c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5a5194acb48a1c498ea8f2bb33f6e14, type: 3}
+--- !u!1 &8091487496181821279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 81614332689106965, guid: e5a5194acb48a1c498ea8f2bb33f6e14,
+    type: 3}
+  m_PrefabInstance: {fileID: 8172712588064155466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2869800550086978184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8091487496181821279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4009ca75102ebf44a7beda05b918cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {x: 0, y: 0, z: 0}
+  target: {fileID: 0}
+  player: {fileID: 0}
+  spawnRange: {x: 0, y: 0}
+  enemyPrefab: {fileID: 0}
+  HP: 0
+  damageCooler: 0
+  damageCoolingTimeLength: 1
 --- !u!4 &8863486132526970341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 750451187533451951, guid: e5a5194acb48a1c498ea8f2bb33f6e14,

@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Transfer2toQuit : MonoBehaviour
+public class Transfer2to3 : MonoBehaviour
 {
-public int counter_BD;
+    public int counter_BD;
     public int counter_HD;
     public int EndLevel1;
     public float timerWave1to2;
@@ -73,14 +74,7 @@ public int counter_BD;
     {
        if(EndLevel1 == 1)
        {
-        Quitgame();
+        SceneManager.LoadScene(2);
        }
-    }
-    void Quitgame()
-    {
-        Application.Quit();
-
-        Debug.Log ("The game has quit!");
-    }
-    
+    }    
 }

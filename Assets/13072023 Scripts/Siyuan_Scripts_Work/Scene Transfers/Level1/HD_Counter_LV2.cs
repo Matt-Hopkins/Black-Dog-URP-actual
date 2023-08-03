@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HD_Counter_LV2 : MonoBehaviour
 {
-    public Transfer2toQuit checkHD;
+    public Transfer2to3 checkHD;
     void Start()
     {
         

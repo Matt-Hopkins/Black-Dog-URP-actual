@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BD_Counter_LV2 : MonoBehaviour
 {
-    public Transfer2toQuit checkBD;
+    public Transfer2to3 checkBD;
     
     void Start()
     {

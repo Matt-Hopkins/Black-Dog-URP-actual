@@ -32,16 +32,4 @@ public class BD_WW_EnemyAI_MH : MonoBehaviour
 
          animator.SetBool("IsMoving", true);
     }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Sword")
-        {
-            Debug.Log ("The enemy hit the the sword");
-
-            //EnemyDeath();
-
-            Destroy (this.gameObject);
-        }
-    }
 }
