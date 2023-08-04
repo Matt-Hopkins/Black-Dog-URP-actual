@@ -56,7 +56,8 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\HD_Enemy_AI_Ver1.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Enemy Related\Enemy AI\HD_Enemy_AI_Ver1.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Enemy Related\BD_Stun.cs" />
     <Compile Include="Assets\Scripts\BD_HealthCounter_MH.cs" />
     <Compile Include="Assets\Scripts\BD_Health_MH.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\New_PlayerMovement.cs" />
@@ -65,14 +66,20 @@
     <Compile Include="Assets\Scripts\BD_Player_MH.cs" />
     <Compile Include="Assets\Scripts\BD_Weapon_SS.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\Mouse_Rotation_Only.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Enemy Related\BD_CS_Stun_SS.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\Transfer1o2.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\Test_Mouse_Follow.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Enemy Related\Enemy AI\BD_CS_Enemy_AI.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level3\BD_CS_Counter_Lv3.cs" />
     <Compile Include="Assets\Scripts\BD_Combat_MH.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\UI\UI_HP_test.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Character\PlayerHealthPoint.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\BulletCollision.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\UI\UI_GraphicAssets_HP_Controller.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Character\Player_StunAttack.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\BD_Counter_Lv1.cs" />
+    <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Enemy Related\BD_HD_Stun_SS.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\Scene Transfers\Level1\HD_Counter_Lv1.cs" />
     <Compile Include="Assets\Scripts\Siyuan_Scripts_Work\AttackFunction\Enemies\HH_BulletCollision.cs" />
     <Compile Include="Assets\Scripts\BD_EnemyAi_MH.cs" />

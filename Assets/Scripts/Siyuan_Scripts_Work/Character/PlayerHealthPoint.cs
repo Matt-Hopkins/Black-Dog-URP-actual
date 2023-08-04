@@ -43,6 +43,13 @@ public class PlayerHealthPoint : MonoBehaviour
           damageCooler = 0.1f;
         }
 
+        if (collision.gameObject.tag == "Enemy_CS" && damageCooler == 0)
+        {
+
+            HP = 0;
+            damageCooler = 0.1f;
+        }
+
 
     }
 
