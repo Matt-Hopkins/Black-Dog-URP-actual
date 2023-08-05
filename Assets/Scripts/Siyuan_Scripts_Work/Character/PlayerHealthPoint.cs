@@ -7,6 +7,7 @@ public class PlayerHealthPoint : MonoBehaviour
     public int HP;
     public float damageCooler;
     public int damageCoolingTimeLength = 1;
+    public New_PlayerMovement DodgeTrigger;
 
 
     void Start()
@@ -36,19 +37,20 @@ public class PlayerHealthPoint : MonoBehaviour
 
      void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy" && damageCooler == 0)
-        {
+        
+            if (collision.gameObject.tag == "Enemy" && damageCooler == 0 && DodgeTrigger.DodgeCondition == 0)
+            {
            
-          HP = HP - 1;
-          damageCooler = 0.1f;
-        }
-
-        if (collision.gameObject.tag == "Enemy_CS" && damageCooler == 0)
-        {
-
-            HP = 0;
+            HP = HP - 1;
             damageCooler = 0.1f;
-        }
+            }
+
+             if (collision.gameObject.tag == "Enemy_CS" && damageCooler == 0 && DodgeTrigger.DodgeCondition == 0)
+            {
+
+              HP = 0;
+              damageCooler = 0.1f;
+            }
 
 
     }
