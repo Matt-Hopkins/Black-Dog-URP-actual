@@ -14,6 +14,7 @@ public class Transfer3toQuit : MonoBehaviour
 
     public float Wave2WaitingTime = 3f;
     public float Wave3WaitingTime = 3f;
+    public float Wave4WaitingTime = 3f;
     public float transferWaitingTime = 3f;
     
     public GameObject EnemyGroup_2;
@@ -74,7 +75,7 @@ public class Transfer3toQuit : MonoBehaviour
             timerWave2to3 += Time.deltaTime;
        }
 
-       if (counter_BD == 15 && counter_HD == 9 && timerWave2to3 >= Wave3WaitingTime)
+       if (counter_BD == 15 && counter_HD == 9 && timerWave2to3 >= Wave4WaitingTime)
        {
             EnemyGroup_4.SetActive(true);
        }

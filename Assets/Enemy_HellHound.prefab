@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 5586574691090771019}
   - component: {fileID: 575384565}
   - component: {fileID: 7965932946101117078}
+  - component: {fileID: -3186773620082925874}
   m_Layer: 0
   m_Name: Enemy_HellHound
   m_TagString: Enemy
@@ -238,6 +239,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 064c9b876979ec0429d3ad47a7c48be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkHD: {fileID: 0}
+--- !u!114 &-3186773620082925874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7543298161044088423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc8bd5ff9be69e469d1bd1b8c133d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   checkHD: {fileID: 0}
