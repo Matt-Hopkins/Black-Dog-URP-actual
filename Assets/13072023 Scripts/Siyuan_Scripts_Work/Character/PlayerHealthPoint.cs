@@ -11,7 +11,7 @@ public class PlayerHealthPoint : MonoBehaviour
 
     void Start()
     {
-        HP = 5;
+        HP = 10;
         damageCooler = 0;
     }
 

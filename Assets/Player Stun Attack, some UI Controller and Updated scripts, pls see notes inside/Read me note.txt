@@ -1,0 +1,7 @@
+Inside this zip folder, I placed the new created scripts and updated scripts with date version 07/08/2023.
+
+Folder naming and their contents:
+Attack Funtion: Placing attack functions realted scripts for both the character and enemies.
+Character: Updated "New_PlayerMovement" and "PlayerHealthPoint", put here anything related to character despite the attack function.
+Enemie Related: New scripts of enemies's been stun functions, updated enemies's AI scripts, put here anything related to enemies despite the attack function.
+UI: New scripts of UI assets controllers, put here anything related to UI functions.

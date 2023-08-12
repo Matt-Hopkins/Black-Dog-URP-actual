@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Transfer3toQuit : MonoBehaviour
 {
@@ -86,14 +87,8 @@ public class Transfer3toQuit : MonoBehaviour
     {
        if(EndLevel1 == 1)
        {
-        Quitgame();
+        SceneManager.LoadScene(1);
        }
-    }
-    void Quitgame()
-    {
-        Application.Quit();
-
-        Debug.Log ("The game has quit!");
-    }
+    } 
 
 }

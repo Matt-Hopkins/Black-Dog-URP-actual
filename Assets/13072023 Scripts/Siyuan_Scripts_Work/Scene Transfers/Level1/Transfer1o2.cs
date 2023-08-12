@@ -74,7 +74,7 @@ public class Transfer1o2 : MonoBehaviour
     {
        if(EndLevel1 == 1)
        {
-         SceneManager.LoadScene(1);
+         SceneManager.LoadScene(2);
        }
 
        else
