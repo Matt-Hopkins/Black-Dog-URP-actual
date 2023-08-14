@@ -9,10 +9,12 @@ public class PlayerHealthPoint : MonoBehaviour
     public int damageCoolingTimeLength = 1;
     public New_PlayerMovement DodgeTrigger;
 
+    public OnPlayerDead GameOverCheck;
+
 
     void Start()
     {
-        HP = 5;
+        HP = 10;
         damageCooler = 0;
     }
 
@@ -21,7 +23,8 @@ public class PlayerHealthPoint : MonoBehaviour
     {
         if (HP == 0)
         {
-            Destroy(this.gameObject);
+            GameOverCheck.GameOverSceneCheck = 1;
+            //Destroy(this.gameObject);
         }
 
         if (damageCooler >= 0.1f)

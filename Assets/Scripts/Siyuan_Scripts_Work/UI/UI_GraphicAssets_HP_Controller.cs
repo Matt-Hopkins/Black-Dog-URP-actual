@@ -10,6 +10,11 @@ public class UI_GraphicAssets_HP_Controller : MonoBehaviour
     public GameObject ThirdPoint;
     public GameObject FourthPoint;
     public GameObject FifthPoint;
+    public GameObject SixthPoint;
+    public GameObject SeventhPoint;
+    public GameObject EighthPoint;
+    public GameObject NinthPoint;
+    public GameObject TenththPoint;
     void Start()
     {
         
@@ -25,36 +30,93 @@ public class UI_GraphicAssets_HP_Controller : MonoBehaviour
     {
         if (currentHP.HP == 0)
         {
-            FirstPoint.SetActive(false);
-            SecondPoint.SetActive(false);
-            ThirdPoint.SetActive(false);
-            FourthPoint.SetActive(false);
-            FifthPoint.SetActive(false);
+            FirstPoint.SetActive(true);
+            SecondPoint.SetActive(true);
+            ThirdPoint.SetActive(true);
+            FourthPoint.SetActive(true);
+            FifthPoint.SetActive(true);
+            SixthPoint.SetActive(true);
+            SeventhPoint.SetActive(true);
+            EighthPoint.SetActive(true);
+            NinthPoint.SetActive(true);
+            TenththPoint.SetActive(true);
         }
         else if (currentHP.HP == 1)
         {
-            FifthPoint.SetActive(true);
+            FirstPoint.SetActive(true);
             SecondPoint.SetActive(true);
             ThirdPoint.SetActive(true);
             FourthPoint.SetActive(true);
+            FifthPoint.SetActive(true);
+            SixthPoint.SetActive(true);
+            SeventhPoint.SetActive(true);
+            EighthPoint.SetActive(true);
+            NinthPoint.SetActive(true);
         }
         else if (currentHP.HP == 2)
         {
-            FourthPoint.SetActive(true);
+            FirstPoint.SetActive(true);
             SecondPoint.SetActive(true);
             ThirdPoint.SetActive(true);
+            FourthPoint.SetActive(true);
+            FifthPoint.SetActive(true);
+            SixthPoint.SetActive(true);
+            SeventhPoint.SetActive(true);
+            EighthPoint.SetActive(true);
         }
         else if (currentHP.HP == 3)
         {
-            ThirdPoint.SetActive(true);
+            FirstPoint.SetActive(true);
             SecondPoint.SetActive(true);
+            ThirdPoint.SetActive(true);
+            FourthPoint.SetActive(true);
+            FifthPoint.SetActive(true);
+            SixthPoint.SetActive(true);
+            SeventhPoint.SetActive(true);
         }
         else if (currentHP.HP == 4)
         {
+            FirstPoint.SetActive(true);
             SecondPoint.SetActive(true);
+            ThirdPoint.SetActive(true);
+            FourthPoint.SetActive(true);
+            FifthPoint.SetActive(true);
+            SixthPoint.SetActive(true);
+            
         }
-        else
+        else if (currentHP.HP == 5)
         { 
+            FirstPoint.SetActive(true);
+            SecondPoint.SetActive(true);
+            ThirdPoint.SetActive(true);
+            FourthPoint.SetActive(true);
+            FifthPoint.SetActive(true);
+
+        }
+        else if (currentHP.HP == 6)
+        { 
+            FirstPoint.SetActive(true);
+            SecondPoint.SetActive(true);
+            ThirdPoint.SetActive(true);
+            FourthPoint.SetActive(true);
+            
+        }
+        else if (currentHP.HP == 7)
+        { 
+            FirstPoint.SetActive(true);
+            SecondPoint.SetActive(true);
+            ThirdPoint.SetActive(true);
+            
+        }
+        else if (currentHP.HP == 8)
+        { 
+            FirstPoint.SetActive(true);
+            SecondPoint.SetActive(true);
+            
+        }
+        else if (currentHP.HP == 9)
+        { 
+            FirstPoint.SetActive(true);
         }
     }
 }
